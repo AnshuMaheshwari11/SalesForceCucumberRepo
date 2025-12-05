@@ -1,7 +1,6 @@
 package training.base;
 
 import java.io.File;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -57,19 +56,9 @@ public class BasePage {
 		return driver.findElements(locator);
 	}
 	
-	public void waitFor(long time, String unit) {
-		
-		Duration timeduration;
-		switch(unit.toLowerCase()) {
-		case "seconds":
-			timeduration = Duration.ofSeconds(time);
-			break;
-		default:
-			timeduration = Duration.ofMillis(time);
-		}
-
+	public void waitFor(long timeinmillis) {
 		try {
-			Thread.sleep(timeduration);
+			Thread.sleep(timeinmillis);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

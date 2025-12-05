@@ -26,9 +26,9 @@ public class Steps extends BaseTest{
 	    createPageInstance(pagename);
 	}
 	
-	@When("User wait for {int} {string}")
-	public void user_wait_for(int time, String unit) {
-	    page.waitFor(time, unit);
+	@When("User wait for {long}")
+	public void user_wait_for(long timeinmillis) {
+	    page.waitFor(timeinmillis);
 	}
 	
 	@When("User clear the textbox {string}")
