@@ -34,7 +34,7 @@ And User switch to default content
 Then User verify the data contains "profilename" "lastname"
 
 
-@UserMenu @UserProfile
+@Developing @UserMenu @UserProfile
 Scenario: TC06B Select UserMenu MyProfile and Post
 Given User is on "HomePage"
 When User click on link "usermenu"
@@ -46,8 +46,8 @@ And User switch to iframe "postframe"
 And User read and enter into textbox "postcontent"
 And User switch to default content
 And User click on button "share"
-When User wait for 3000 milliseconds
-Then User verify the data "postedfeed" "postcontent"
+Then User verify the text contains "feeditemtopic" "Click to add topics:"
+And User verify the data "postedfeed" "postcontent"
 
 @Developing @UserMenu @UserProfile
 Scenario: TC06C Select UserMenu MyProfile and Upload File
@@ -60,8 +60,8 @@ When User click on link "file"
 And User click on button "uploadfile"
 And User read and upload the file "choosefilepath"
 And User click on button "share"
-When User wait for 3000 milliseconds
-Then User verify the data "uploadedfile" "filebasename"
+Then User verify the text contains "feeditemtopic" "Click to add topics:"
+And User verify the data "uploadedfile" "filebasename"
 
 @UserMenu @UserProfile
 Scenario: TC06D Select UserMenu MyProfile and Upload ProfilePhoto

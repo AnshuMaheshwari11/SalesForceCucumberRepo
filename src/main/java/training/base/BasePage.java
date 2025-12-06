@@ -36,6 +36,21 @@ public class BasePage {
 		objectrepo.put(elementname, locator);
 	}
 	
+	public void waitForPageToLoad() {
+        WebDriverWait wait = new WebDriverWait(driver, 30); 
+        wait.until((ExpectedCondition<Boolean>) wd ->((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
+
+    }
+	
+	public void waitFor(long timeinmillis) {
+		try {
+			Thread.sleep(timeinmillis);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	private void waitForElementToLocate(By locator, int timeinseconds) {
 		WebDriverWait wait = new WebDriverWait(driver, timeinseconds);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -56,20 +71,6 @@ public class BasePage {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
 	}
 	
-	public void waitForPageToLoad() {
-        WebDriverWait wait = new WebDriverWait(driver, 30); 
-        wait.until((ExpectedCondition<Boolean>) wd ->((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
-
-    }
-	
-	public void waitFor(long timeinmillis) {
-		try {
-			Thread.sleep(timeinmillis);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 	
 	public void switchToFrame(String elementname) {
 		waitForFrameToBeAvailableAndSwitch(objectrepo.get(elementname),10);

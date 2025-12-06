@@ -20,6 +20,7 @@ public class UserProfilePage extends BasePage {
 		addElement("postframe", By.xpath("//iframe[@class='cke_wysiwyg_frame cke_reset']"));
 		addElement("postcontent", By.xpath("//body[contains(text(),'Share an update')]"));
 		addElement("share", By.id("publishersharebutton"));
+		addElement("feeditemtopic", By.xpath("//div[@class='view highlight']/a"));
 		addElement("postedfeed", By.xpath("//span[@class='feeditemtext cxfeeditemtext']/p"));
 		addElement("file", By.id("publisherAttachContentPost"));
 		addElement("uploadfile", By.id("chatterUploadFileAction"));

@@ -19,7 +19,7 @@ And User read and enter into textbox "password"
 And User click on button "login"
 And User is on "VerifyIdentityPage"
 And User click on button "code"
-And User wait for 20000
+And User wait for 20000 milliseconds
 And User click on button "verify"
 And User is on "HomePage"
 Then User verify the text "pagename" "Home"
