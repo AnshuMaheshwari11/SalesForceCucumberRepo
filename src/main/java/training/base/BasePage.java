@@ -44,9 +44,19 @@ public class BasePage {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
+	private void waitForNumberOfWindowsToBe(int numberofwindows, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.numberOfWindowsToBe(numberofwindows));
+	}
+	
+	private void waitForFrameToBeAvailable(By locator, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
+	}
+	
 	private WebElement getElement(String elementname) {
 		By locator = objectrepo.get(elementname);
-		waitForElementToLocate(locator, 15);
+		waitForElementToLocate(locator, 20);
 		return driver.findElement(locator);
 	}
 	
@@ -137,6 +147,7 @@ public class BasePage {
 	}
 
 	public void switchToFrame(String elementname) {
+		waitForFrameToBeAvailable(objectrepo.get(elementname),10);
 		driver.switchTo().frame(getElement(elementname));
 	}
 	
@@ -291,7 +302,7 @@ public class BasePage {
 	
 	public void verifyNewWindow(String expectedvalue) {
 		String parent = driver.getWindowHandle();
-		
+		waitForNumberOfWindowsToBe(2, 20);
 		for(String windowhndl : driver.getWindowHandles()) {
 			if(!windowhndl.equals(parent))
 				driver.switchTo().window(windowhndl);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="Usermenu dropdown all testcases" time="26.608" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="Usermenu dropdown all testcases" time="206.932" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="/Users/anshu/.cache/selenium/chromedriver/mac64/142.0.7444.175/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Users/anshu/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.8.v20250724-1412/jre/lib"/>
-    <property name="sun.java.command" value="/Users/anshu/Workspace/SalesForceCucumber/target/surefire/surefirebooter-20251205143124873_3.jar /Users/anshu/Workspace/SalesForceCucumber/target/surefire 2025-12-05T14-31-24_568-jvmRun1 surefire-20251205143124873_1tmp surefire_0-20251205143124873_2tmp"/>
+    <property name="sun.java.command" value="/Users/anshu/Workspace/SalesForceCucumber/target/surefire/surefirebooter-20251205152335326_3.jar /Users/anshu/Workspace/SalesForceCucumber/target/surefire 2025-12-05T15-23-34_973-jvmRun1 surefire-20251205152335326_1tmp surefire_0-20251205152335326_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/anshu/Workspace/SalesForceCucumber/target/test-classes:/Users/anshu/Workspace/SalesForceCucumber/target/classes:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/anshu/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/anshu/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/anshu/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/anshu/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/anshu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/anshu/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/anshu/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/anshu/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/anshu/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/anshu/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/anshu/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/anshu/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/anshu/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/anshu/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/anshu/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/anshu/.m2/repository/io/github/bonigarcia/webdrivermanager/6.3.2/webdrivermanager-6.3.2.jar:/Users/anshu/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/anshu/.m2/repository/com/google/code/gson/gson/2.13.2/gson-2.13.2.jar:/Users/anshu/.m2/repository/com/github/docker-java/docker-java/3.6.0/docker-java-3.6.0.jar:/Users/anshu/.m2/repository/com/github/docker-java/docker-java-core/3.6.0/docker-java-core-3.6.0.jar:/Users/anshu/.m2/repository/com/github/docker-java/docker-java-api/3.6.0/docker-java-api-3.6.0.jar:/Users/anshu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/anshu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/anshu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/anshu/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/anshu/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.6.0/docker-java-transport-httpclient5-3.6.0.jar:/Users/anshu/.m2/repository/com/github/docker-java/docker-java-transport/3.6.0/docker-java-transport-3.6.0.jar:/Users/anshu/.m2/repository/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar:/Users/anshu/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/anshu/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/anshu/.m2/repository/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar:/Users/anshu/.m2/repository/commons-codec/commons-codec/1.19.0/commons-codec-1.19.0.jar:/Users/anshu/.m2/repository/commons-io/commons-io/2.20.0/commons-io-2.20.0.jar:/Users/anshu/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.4.3/httpclient5-5.4.3.jar:/Users/anshu/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.3.4/httpcore5-5.3.4.jar:/Users/anshu/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.3.4/httpcore5-h2-5.3.4.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-testng/7.31.0/cucumber-testng-7.31.0.jar:/Users/anshu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/anshu/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/anshu/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/anshu/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-java/7.31.0/cucumber-java-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-junit/7.31.0/cucumber-junit-7.31.0.jar:/Users/anshu/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/anshu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-core/7.31.0/cucumber-core-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-gherkin/7.31.0/cucumber-gherkin-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.31.0/cucumber-gherkin-messages-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/gherkin/36.0.0/gherkin-36.0.0.jar:/Users/anshu/.m2/repository/io/cucumber/messages/30.1.0/messages-30.1.0.jar:/Users/anshu/.m2/repository/io/cucumber/pretty-formatter/2.4.0/pretty-formatter-2.4.0.jar:/Users/anshu/.m2/repository/io/cucumber/query/14.6.0/query-14.6.0.jar:/Users/anshu/.m2/repository/io/cucumber/teamcity-formatter/0.2.0/teamcity-formatter-0.2.0.jar:/Users/anshu/.m2/repository/io/cucumber/testng-xml-formatter/0.7.0/testng-xml-formatter-0.7.0.jar:/Users/anshu/.m2/repository/io/cucumber/usage-formatter/0.1.0/usage-formatter-0.1.0.jar:/Users/anshu/.m2/repository/io/cucumber/tag-expressions/8.0.0/tag-expressions-8.0.0.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-json-formatter/0.3.0/cucumber-json-formatter-0.3.0.jar:/Users/anshu/.m2/repository/io/cucumber/datatable/7.31.0/datatable-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/cucumber-plugin/7.31.0/cucumber-plugin-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/docstring/7.31.0/docstring-7.31.0.jar:/Users/anshu/.m2/repository/io/cucumber/html-formatter/22.0.0/html-formatter-22.0.0.jar:/Users/anshu/.m2/repository/io/cucumber/junit-xml-formatter/0.10.0/junit-xml-formatter-0.10.0.jar:/Users/anshu/.m2/repository/io/cucumber/ci-environment/12.0.0/ci-environment-12.0.0.jar:"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/anshu/Workspace/SalesForceCucumber/target/surefire/surefirebooter-20251205143124873_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/anshu/Workspace/SalesForceCucumber/target/surefire/surefirebooter-20251205152335326_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.8+9-LTS"/>
@@ -61,7 +61,84 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="TC06C Select UserMenu MyProfile and Upload File" classname="Usermenu dropdown all testcases" time="26.482">
+  <testcase name="TC05 Select UserMenu Dropdown" classname="Usermenu dropdown all testcases" time="20.827">
+    <system-out><![CDATA[
+@Smoke @UserMenu
+&amp#27;[1mScenario:&amp#27;[22m TC05 Select UserMenu Dropdown                         &amp#27;[90m# features/UserMenu.feature:8&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m                    &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                                 &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the following items in list &amp#27;[1m"usermenulist"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_verify_the_following_items_in_list(java.lang.String,io.cucumber.datatable.DataTable)&amp#27;[39m
+      | My Profile                     |
+      | My Settings                    |
+      | Developer Console              |
+      | Switch to Lightning Experience |
+      | Logout                         |
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 10439
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 10439.
+Dec 05, 2025 3:23:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC06A Select UserMenu MyProfile and Edit" classname="Usermenu dropdown all testcases" time="25.285">
+    <system-out><![CDATA[
+@UserMenu @UserProfile
+&amp#27;[1mScenario:&amp#27;[22m TC06A Select UserMenu MyProfile and Edit              &amp#27;[90m# features/UserMenu.feature:20&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m                    &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                                 &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"myprofile"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser is on &amp#27;[1m"UserProfilePage"&amp#27;[22m&amp#27;[39m                            &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the text &amp#27;[1m"userprofile"&amp#27;[22m &amp#27;[1m"People"&amp#27;[22m&amp#27;[39m            &amp#27;[90m# training.steps.Steps.user_verify_the_text(java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"editProfileicon"&amp#27;[22m&amp#27;[39m                   &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser switch to iframe &amp#27;[1m"aboutcontactframe"&amp#27;[22m&amp#27;[39m               &amp#27;[90m# training.steps.Steps.user_switch_to_iframe(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"abouttab"&amp#27;[22m&amp#27;[39m                         &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser clear the textbox &amp#27;[1m"lastname"&amp#27;[22m&amp#27;[39m                       &amp#27;[90m# training.steps.Steps.user_clear_the_textbox(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser read and enter into textbox &amp#27;[1m"lastname"&amp#27;[22m&amp#27;[39m             &amp#27;[90m# training.steps.Steps.user_read_and_enter_into_textbox(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"saveall"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser switch to default content&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_switch_to_default_content()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the data contains &amp#27;[1m"profilename"&amp#27;[22m &amp#27;[1m"lastname"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_verify_the_data_contains(java.lang.String,java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 25914
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 25914.
+Dec 05, 2025 3:24:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC06B Select UserMenu MyProfile and Post" classname="Usermenu dropdown all testcases" time="25.762">
+    <system-out><![CDATA[
+@UserMenu @UserProfile
+&amp#27;[1mScenario:&amp#27;[22m TC06B Select UserMenu MyProfile and Post       &amp#27;[90m# features/UserMenu.feature:37&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m             &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                   &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"myprofile"&amp#27;[22m&amp#27;[39m                   &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser is on &amp#27;[1m"UserProfilePage"&amp#27;[22m&amp#27;[39m                    &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"post"&amp#27;[22m&amp#27;[39m                       &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser switch to iframe &amp#27;[1m"postframe"&amp#27;[22m&amp#27;[39m                &amp#27;[90m# training.steps.Steps.user_switch_to_iframe(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser read and enter into textbox &amp#27;[1m"postcontent"&amp#27;[22m&amp#27;[39m   &amp#27;[90m# training.steps.Steps.user_read_and_enter_into_textbox(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser switch to default content&amp#27;[39m                   &amp#27;[90m# training.steps.Steps.user_switch_to_default_content()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"share"&amp#27;[22m&amp#27;[39m                     &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser wait for &amp#27;[1m3000&amp#27;[22m&amp#27;[39m                              &amp#27;[90m# training.steps.Steps.user_wait_for(long)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the data &amp#27;[1m"postedfeed"&amp#27;[22m &amp#27;[1m"postcontent"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_verify_the_data(java.lang.String,java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 30815
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 30815.
+Dec 05, 2025 3:24:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC06C Select UserMenu MyProfile and Upload File" classname="Usermenu dropdown all testcases" time="22.34">
     <system-out><![CDATA[
 @Developing @UserMenu @UserProfile
 &amp#27;[1mScenario:&amp#27;[22m TC06C Select UserMenu MyProfile and Upload File   &amp#27;[90m# features/UserMenu.feature:51&amp#27;[39m
@@ -74,17 +151,136 @@
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"uploadfile"&amp#27;[22m&amp#27;[39m                   &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser read and upload the file &amp#27;[1m"choosefilepath"&amp#27;[22m&amp#27;[39m      &amp#27;[90m# training.steps.Steps.user_read_and_upload_the_file(java.lang.String)&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"share"&amp#27;[22m&amp#27;[39m                        &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
-  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser wait for &amp#27;[1m3&amp#27;[22m &amp#27;[1m"seconds"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_wait_for(int,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser wait for &amp#27;[1m3000&amp#27;[22m&amp#27;[39m                                 &amp#27;[90m# training.steps.Steps.user_wait_for(long)&amp#27;[39m
   &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the data &amp#27;[1m"uploadedfile"&amp#27;[22m &amp#27;[1m"filebasename"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_verify_the_data(java.lang.String,java.lang.String)&amp#27;[39m
 ]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 8270
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 41941
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 8270.
-Dec 05, 2025 2:31:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully on port 41941.
+Dec 05, 2025 3:24:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC06D Select UserMenu MyProfile and Upload ProfilePhoto" classname="Usermenu dropdown all testcases" time="30.5">
+    <system-out><![CDATA[
+@UserMenu @UserProfile
+&amp#27;[1mScenario:&amp#27;[22m TC06D Select UserMenu MyProfile and Upload ProfilePhoto        &amp#27;[90m# features/UserMenu.feature:64&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m                             &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                                          &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                                   &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"myprofile"&amp#27;[22m&amp#27;[39m                                   &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser is on &amp#27;[1m"UserProfilePage"&amp#27;[22m&amp#27;[39m                                    &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser hover on &amp#27;[1m"profilephoto"&amp#27;[22m&amp#27;[39m                                    &amp#27;[90m# training.steps.Steps.user_hover_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"addphoto"&amp#27;[22m&amp#27;[39m                                    &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser switch to iframe &amp#27;[1m"photocontentframe"&amp#27;[22m&amp#27;[39m                        &amp#27;[90m# training.steps.Steps.user_switch_to_iframe(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser read and upload the file &amp#27;[1m"profilephotopath"&amp#27;[22m&amp#27;[39m                 &amp#27;[90m# training.steps.Steps.user_read_and_upload_the_file(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"save"&amp#27;[22m&amp#27;[39m                                      &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser hold and move &amp#27;[1m"photocroparea"&amp#27;[22m &amp#27;[1m"imageXoffset"&amp#27;[22m &amp#27;[1m"imageYoffset"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_hold_and_move(java.lang.String,java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"saveimage"&amp#27;[22m&amp#27;[39m                                 &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser switch to default content&amp#27;[39m                                   &amp#27;[90m# training.steps.Steps.user_switch_to_default_content()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the text &amp#27;[1m"addphoto"&amp#27;[22m &amp#27;[1m"Update"&amp#27;[22m&amp#27;[39m                        &amp#27;[90m# training.steps.Steps.user_verify_the_text(java.lang.String,java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 22468
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 22468.
+Dec 05, 2025 3:25:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC07A Select UserMenu MySettings and Download Login History" classname="Usermenu dropdown all testcases" time="18.281">
+    <system-out><![CDATA[
+@UserMenu @UserSetting
+&amp#27;[1mScenario:&amp#27;[22m TC07A Select UserMenu MySettings and Download Login History &amp#27;[90m# features/UserMenu.feature:81&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                                       &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                                &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"mysettings"&amp#27;[22m&amp#27;[39m                               &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser is on &amp#27;[1m"UserSettingsPage"&amp#27;[22m&amp#27;[39m                                 &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the text &amp#27;[1m"pagename"&amp#27;[22m &amp#27;[1m"My Settings"&amp#27;[22m&amp#27;[39m                &amp#27;[90m# training.steps.Steps.user_verify_the_text(java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on button &amp#27;[1m"personal"&amp#27;[22m&amp#27;[39m                              &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"loginhistory"&amp#27;[22m&amp#27;[39m                           &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"downloadhistory"&amp#27;[22m&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the text &amp#27;[1m"pagetype"&amp#27;[22m &amp#27;[1m"Login History"&amp#27;[22m&amp#27;[39m              &amp#27;[90m# training.steps.Steps.user_verify_the_text(java.lang.String,java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 35955
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 35955.
+Dec 05, 2025 3:25:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC07B Select UserMenu MySettings and Update Display and Layout" classname="Usermenu dropdown all testcases" time="29.931">
+    <system-out><![CDATA[
+@UserMenu @UserSetting
+&amp#27;[1mScenario:&amp#27;[22m TC07B Select UserMenu MySettings and Update Display and Layout     &amp#27;[90m# features/UserMenu.feature:93&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m                                 &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                                              &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                                       &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"mysettings"&amp#27;[22m&amp#27;[39m                                      &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser is on &amp#27;[1m"UserSettingsPage"&amp#27;[22m&amp#27;[39m                                       &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on button &amp#27;[1m"displayandlayout"&amp#27;[22m&amp#27;[39m                             &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"customizemytabs"&amp#27;[22m&amp#27;[39m                               &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on dropdown &amp#27;[1m"customappdropdown"&amp#27;[22m&amp#27;[39m                           &amp#27;[90m# training.steps.Steps.user_click_on_dropdown(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser read and select from dropdown &amp#27;[1m"customappdropdown"&amp#27;[22m &amp#27;[1m"customapp"&amp#27;[22m&amp#27;[39m   &amp#27;[90m# training.steps.Steps.user_read_and_select_from_dropdown(java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser read and select from dropdown &amp#27;[1m"availabletabdropdown"&amp#27;[22m &amp#27;[1m"tabtoadd"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_read_and_select_from_dropdown(java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on button &amp#27;[1m"add"&amp#27;[22m&amp#27;[39m                                           &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the item in dropdown &amp#27;[1m"selectedtabdropdown"&amp#27;[22m &amp#27;[1m"tabtoadd"&amp#27;[22m&amp#27;[39m   &amp#27;[90m# training.steps.Steps.user_verify_the_item_in_dropdown(java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on button &amp#27;[1m"save"&amp#27;[22m&amp#27;[39m                                         &amp#27;[90m# training.steps.Steps.user_click_on_button(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                                                &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on dropdown &amp#27;[1m"appmenu"&amp#27;[22m&amp#27;[39m                                     &amp#27;[90m# training.steps.Steps.user_click_on_dropdown(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"salesforcechatter"&amp#27;[22m&amp#27;[39m                               &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the item in list &amp#27;[1m"tabbarmenulist"&amp#27;[22m &amp#27;[1m"tabtoadd"&amp#27;[22m&amp#27;[39m            &amp#27;[90m# training.steps.Steps.user_verify_the_item_in_list(java.lang.String,java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on dropdown &amp#27;[1m"appmenu"&amp#27;[22m&amp#27;[39m                                     &amp#27;[90m# training.steps.Steps.user_click_on_dropdown(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"Content"&amp#27;[22m&amp#27;[39m                                         &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 40733
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 40733.
+Dec 05, 2025 3:26:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC08 Select UserMenu Deleoper Console" classname="Usermenu dropdown all testcases" time="19.107">
+    <system-out><![CDATA[
+@UserMenu @DeveloperConsole
+&amp#27;[1mScenario:&amp#27;[22m TC08 Select UserMenu Deleoper Console         &amp#27;[90m# features/UserMenu.feature:114&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m            &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                         &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                  &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"developerconsole"&amp#27;[22m&amp#27;[39m           &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the new window &amp#27;[1m"Developer Console"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_verify_the_new_window(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser Close new window&amp#27;[39m                          &amp#27;[90m# training.steps.Steps.user_close_new_window()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                           &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the text &amp#27;[1m"pagename"&amp#27;[22m &amp#27;[1m"Home"&amp#27;[22m&amp#27;[39m         &amp#27;[90m# training.steps.Steps.user_verify_the_text(java.lang.String,java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 18883
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 18883.
+Dec 05, 2025 3:26:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TC09 Select UserMenu Logout" classname="Usermenu dropdown all testcases" time="14.734">
+    <system-out><![CDATA[
+@UserMenu @Logout
+&amp#27;[1mScenario:&amp#27;[22m TC09 Select UserMenu Logout                  &amp#27;[90m# features/UserMenu.feature:125&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser secure launch the application&amp#27;[39m           &amp#27;[90m# training.steps.Steps.user_secure_launch_the_application()&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mGiven &amp#27;[22mUser is on &amp#27;[1m"HomePage"&amp#27;[22m&amp#27;[39m                        &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mWhen &amp#27;[22mUser click on link &amp#27;[1m"usermenu"&amp#27;[22m&amp#27;[39m                 &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser click on link &amp#27;[1m"logout"&amp#27;[22m&amp#27;[39m                    &amp#27;[90m# training.steps.Steps.user_click_on_link(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mAnd &amp#27;[22mUser is on &amp#27;[1m"LoginPage"&amp#27;[22m&amp#27;[39m                         &amp#27;[90m# training.steps.Steps.user_is_on(java.lang.String)&amp#27;[39m
+  &amp#27;[32m✔&amp#27;[39m &amp#27;[32m&amp#27;[1mThen &amp#27;[22mUser verify the data is displayed &amp#27;[1m"loginform"&amp#27;[22m&amp#27;[39m &amp#27;[90m# training.steps.Steps.user_verify_the_data_is_displayed(java.lang.String)&amp#27;[39m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 142.0.7444.175 (302067f14a4ea3f42001580e6101fa25ed343445-refs/branch-heads/7444@{#2749}) on port 46644
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 46644.
+Dec 05, 2025 3:26:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
