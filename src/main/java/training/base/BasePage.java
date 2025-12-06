@@ -49,9 +49,17 @@ public class BasePage {
 		wait.until(ExpectedConditions.numberOfWindowsToBe(numberofwindows));
 	}
 	
-	private void waitForFrameToBeAvailable(By locator, int time) {
+	private void waitForFrameToBeAvailableAndSwitch(By locator, int time) {
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
+	}
+	
+	public void switchToFrame(String elementname) {
+		waitForFrameToBeAvailableAndSwitch(objectrepo.get(elementname),10);
+	}
+	
+	public void switchToDefaultContent() {
+		driver.switchTo().defaultContent();
 	}
 	
 	private WebElement getElement(String elementname) {
@@ -146,15 +154,6 @@ public class BasePage {
 		return getElement(elementname).isSelected();
 	}
 
-	public void switchToFrame(String elementname) {
-		waitForFrameToBeAvailable(objectrepo.get(elementname),10);
-		driver.switchTo().frame(getElement(elementname));
-	}
-	
-	public void switchToDefaultContent() {
-		driver.switchTo().defaultContent();
-	}
-
 	public void HoverOn(String elementname) {
 		action.moveToElement(getElement(elementname)).build().perform();
 	}
@@ -167,7 +166,7 @@ public class BasePage {
 	
 	public void closeNewWindow() {
 		String parent = driver.getWindowHandle();
-		
+		waitForNumberOfWindowsToBe(2, 20);
 		for(String windowhndl : driver.getWindowHandles()) {
 			if(!windowhndl.equals(parent))
 				driver.switchTo().window(windowhndl);

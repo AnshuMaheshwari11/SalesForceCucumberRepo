@@ -33,7 +33,7 @@ And User switch to default content
 Then User verify the data contains "profilename" "lastname"
 
 
-@UserMenu @UserProfile
+@Developing @UserMenu @UserProfile
 Scenario: TC06B Select UserMenu MyProfile and Post
 Given User is on "HomePage"
 When User click on link "usermenu"
@@ -47,7 +47,7 @@ And User click on button "share"
 When User wait for 3000
 Then User verify the data "postedfeed" "postcontent"
 
-@Developing @UserMenu @UserProfile
+@UserMenu @UserProfile
 Scenario: TC06C Select UserMenu MyProfile and Upload File
 Given User is on "HomePage"
 When User click on link "usermenu"
