@@ -22,6 +22,7 @@ Given User is on "HomePage"
 When User click on link "usermenu"
 And User click on link "myprofile"
 And User is on "UserProfilePage"
+And User wait for page to load
 Then User verify the text "userprofile" "People"
 When User click on link "editProfileicon"
 And User switch to iframe "aboutcontactframe"
@@ -39,12 +40,13 @@ Given User is on "HomePage"
 When User click on link "usermenu"
 And User click on link "myprofile"
 Then User is on "UserProfilePage"
+And User wait for page to load
 When User click on link "post"
 And User switch to iframe "postframe"
 And User read and enter into textbox "postcontent"
 And User switch to default content
 And User click on button "share"
-When User wait for 3000
+When User wait for 3000 milliseconds
 Then User verify the data "postedfeed" "postcontent"
 
 @Developing @UserMenu @UserProfile
@@ -53,11 +55,12 @@ Given User is on "HomePage"
 When User click on link "usermenu"
 And User click on link "myprofile"
 Then User is on "UserProfilePage"
+And User wait for page to load
 When User click on link "file"
 And User click on button "uploadfile"
 And User read and upload the file "choosefilepath"
 And User click on button "share"
-When User wait for 3000
+When User wait for 3000 milliseconds
 Then User verify the data "uploadedfile" "filebasename"
 
 @UserMenu @UserProfile
@@ -66,6 +69,7 @@ Given User is on "HomePage"
 When User click on link "usermenu"
 And User click on link "myprofile"
 Then User is on "UserProfilePage"
+And User wait for page to load
 When User hover on "profilephoto"
 And User click on link "addphoto"
 And User switch to iframe "photocontentframe"

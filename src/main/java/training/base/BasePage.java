@@ -6,9 +6,11 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,24 +36,39 @@ public class BasePage {
 		objectrepo.put(elementname, locator);
 	}
 	
-	private void waitForElementToLocate(By locator, int time) {
-		WebDriverWait wait = new WebDriverWait(driver, time);
+	private void waitForElementToLocate(By locator, int timeinseconds) {
+		WebDriverWait wait = new WebDriverWait(driver, timeinseconds);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 	
-	private void waitForElementToClickable(WebElement element, int time) {
-		WebDriverWait wait = new WebDriverWait(driver, time);
+	private void waitForElementToClickable(WebElement element, int timeinseconds) {
+		WebDriverWait wait = new WebDriverWait(driver, timeinseconds);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	private void waitForNumberOfWindowsToBe(int numberofwindows, int time) {
-		WebDriverWait wait = new WebDriverWait(driver, time);
+	private void waitForNumberOfWindowsToBe(int numberofwindows, int timeinseconds) {
+		WebDriverWait wait = new WebDriverWait(driver, timeinseconds);
 		wait.until(ExpectedConditions.numberOfWindowsToBe(numberofwindows));
 	}
 	
-	private void waitForFrameToBeAvailableAndSwitch(By locator, int time) {
-		WebDriverWait wait = new WebDriverWait(driver, time);
+	private void waitForFrameToBeAvailableAndSwitch(By locator, int timeinseconds) {
+		WebDriverWait wait = new WebDriverWait(driver, timeinseconds);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
+	}
+	
+	public void waitForPageToLoad() {
+        WebDriverWait wait = new WebDriverWait(driver, 30); 
+        wait.until((ExpectedCondition<Boolean>) wd ->((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
+
+    }
+	
+	public void waitFor(long timeinmillis) {
+		try {
+			Thread.sleep(timeinmillis);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public void switchToFrame(String elementname) {
@@ -72,15 +89,6 @@ public class BasePage {
 		By locator = objectrepo.get(elementname);
 		waitForElementToLocate(locator, 15);
 		return driver.findElements(locator);
-	}
-	
-	public void waitFor(long timeinmillis) {
-		try {
-			Thread.sleep(timeinmillis);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	public void clearTextbox(String elementname) {
@@ -146,8 +154,9 @@ public class BasePage {
 		
 	}
 	public void clickOn(String elementname) {
-		waitForElementToClickable(getElement(elementname),15);
-		getElement(elementname).click();
+		WebElement element = getElement(elementname);
+		waitForElementToClickable(element,20);
+		element.click();
 	}
 
 	public boolean isSelected(String elementname) {

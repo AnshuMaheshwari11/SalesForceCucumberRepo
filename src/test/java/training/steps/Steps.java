@@ -26,8 +26,13 @@ public class Steps extends BaseTest{
 	    createPageInstance(pagename);
 	}
 	
-	@When("User wait for {long}")
-	public void user_wait_for(long timeinmillis) {
+	@When("User wait for page to load")
+	public void user_wait_for_page_to_load() {
+		page.waitForPageToLoad();
+	}
+	
+	@When("User wait for {long} milliseconds")
+	public void user_wait_for_milliseconds(long timeinmillis) {
 	    page.waitFor(timeinmillis);
 	}
 	

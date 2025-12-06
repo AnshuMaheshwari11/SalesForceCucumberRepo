@@ -22,7 +22,7 @@ public class UserProfilePage extends BasePage {
 		addElement("share", By.id("publishersharebutton"));
 		addElement("postedfeed", By.xpath("//span[@class='feeditemtext cxfeeditemtext']/p"));
 		addElement("file", By.id("publisherAttachContentPost"));
-		addElement("uploadfile", By.id("chatterUploadFileActionPanel"));
+		addElement("uploadfile", By.id("chatterUploadFileAction"));
 		addElement("choosefilepath", By.id("chatterFile"));
 		addElement("uploadedfile", By.xpath("//div[@class='contentFileTitle']/a/span"));
 		addElement("profilephoto", By.className("chatter-photo"));
