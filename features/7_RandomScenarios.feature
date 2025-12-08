@@ -11,7 +11,7 @@ When User click on link "currentusername"
 And User is on "UserProfilePage"
 Then User verify the text "userprofile" "People"
 
-@Other
+@Developing @Other
 Scenario: TC34 Current User Edit LastName
 Given User is on "HomePage"
 When User click on link "currentusername"
@@ -23,6 +23,11 @@ And User clear the textbox "lastname"
 And User enter into textbox "lastname" "ABCD"
 And User click on button "saveall"
 And User switch to default content
+When User is on "HomePage"
+And User wait for page to load
+Then User verify the text contains "usermenulabel" "ABCD"
+When User is on "UserProfilePage"
+And User wait for page to load
 Then User verify the text contains "profilename" "ABCD"
 
 @Other
@@ -67,7 +72,7 @@ And User is on "CalenderViewPage"
 Then User verify the event is blocked "eventblocklist" "hourlist" "eventstarttime"
 
 
-@Developing @Other
+@Other
 Scenario: TC37 Block Recurring Calender Event
 Given User is on "HomePage"
 When User click on link "currentdate"

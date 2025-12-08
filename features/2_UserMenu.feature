@@ -63,7 +63,7 @@ And User click on button "share"
 Then User verify the text contains "feeditemtopic" "Click to add topics:"
 And User verify the data "uploadedfile" "filebasename"
 
-@UserMenu @UserProfile
+@Developing @UserMenu @UserProfile
 Scenario: TC06D Select UserMenu MyProfile and Upload ProfilePhoto
 Given User is on "HomePage"
 When User click on link "usermenu"
@@ -78,6 +78,7 @@ And User click on button "save"
 And User hold and move "photocroparea" "imageXoffset" "imageYoffset"
 And User click on button "saveimage"
 And User switch to default content
+And User wait for 3000 milliseconds
 Then User verify the text "addphoto" "Update"
 
 
