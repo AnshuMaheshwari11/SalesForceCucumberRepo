@@ -63,7 +63,7 @@ And User click on button "share"
 Then User verify the text contains "feeditemtopic" "Click to add topics:"
 And User verify the data "uploadedfile" "filebasename"
 
-@Developing @UserMenu @UserProfile
+@UserMenu @UserProfile
 Scenario: TC06D Select UserMenu MyProfile and Upload ProfilePhoto
 Given User is on "HomePage"
 When User click on link "usermenu"

@@ -100,6 +100,7 @@ And User read and enter into textbox "reportuniqname"
 And User wait for 3000 milliseconds
 And User click on button "saveandrun"
 And User is on "AccountsSavedReportPage"
+And User wait for page to load
 And User hover on "popupclose"
 And User click on button "popupclose"
 Then User verify the data "pagetype" "reportname"

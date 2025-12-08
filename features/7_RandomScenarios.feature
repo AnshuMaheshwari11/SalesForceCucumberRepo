@@ -11,7 +11,7 @@ When User click on link "currentusername"
 And User is on "UserProfilePage"
 Then User verify the text "userprofile" "People"
 
-@Developing @Other
+@Other
 Scenario: TC34 Current User Edit LastName
 Given User is on "HomePage"
 When User click on link "currentusername"
