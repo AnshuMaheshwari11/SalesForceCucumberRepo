@@ -11,7 +11,6 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features= {"features/"},
 		glue= {"training.steps"},
-		tags="@UserMenu",
 		plugin= {"pretty","html:target/cucumber-reports/Login.html",
 				"json:target/cucumber-reports/Login.json"}
 		)

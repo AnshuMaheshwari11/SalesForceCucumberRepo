@@ -24,7 +24,7 @@ public class CalenderNewEventPage extends BasePage {
 		addElement("monthdropdown", By.id("calMonthPicker"));
 		addElement("yeardropdown", By.id("calYearPicker"));
 		addElement("caldateslist", By.xpath("//tr[@class='calRow']/td"));
-		addElement("reminder", By.id("remindercheck"));
+		addElement("reminder", By.name("IsReminderSet"));
 		addElement("save", By.name("save"));
 		
 	}

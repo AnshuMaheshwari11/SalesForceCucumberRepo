@@ -97,7 +97,7 @@ And User click on button "save"
 And User read and enter into textbox "reportname"
 And User clear the textbox "reportuniqname"
 And User read and enter into textbox "reportuniqname"
-And User wait for 3 "seconds"
+And User wait for 3000 milliseconds
 And User click on button "saveandrun"
 And User is on "AccountsSavedReportPage"
 And User hover on "popupclose"

@@ -174,6 +174,22 @@ public class BasePage {
 		action.clickAndHold(getElement(elementname)).moveByOffset(xvalue,yvalue).release().build().perform();
 	}
 	
+	public void clickTheItemInNewWindow(String elementname, String value) {
+		String parent = driver.getWindowHandle();
+		waitForNumberOfWindowsToBe(2, 20);
+		for(String windowhndl : driver.getWindowHandles()) {
+			if(!windowhndl.equals(parent))
+				driver.switchTo().window(windowhndl);
+		}
+		for(WebElement item : getElements(elementname)) {
+			if(item.getText().contains(value)){
+				item.click();
+				break;
+			}	
+		}
+		driver.switchTo().window(parent);
+	}
+	
 	public void closeNewWindow() {
 		String parent = driver.getWindowHandle();
 		waitForNumberOfWindowsToBe(2, 20);
@@ -193,25 +209,25 @@ public class BasePage {
 	
 	public void verifyText(String elementname, String expectedvalue) {
 		waitForElementToLocate(objectrepo.get(elementname), 10);
-		String actualvalue = getElement(elementname).getText();
+		String actualvalue = getElement(elementname).getText().strip();
 		Assert.assertEquals(actualvalue, expectedvalue);
 	}
 	
 	public void verifyTextContains(String elementname, String expectedvalue) {
-		String actualvalue = getElement(elementname).getText();
+		String actualvalue = getElement(elementname).getText().strip();
 		boolean result = actualvalue.contains(expectedvalue);
 		Assert.assertEquals(result, true);
 	}
 	
 	public void verifyData(String elementname, String expectedkey) {
 		String expectedvalue = propertiesfile.getProperty(expectedkey);
-		String actualvalue = getElement(elementname).getText().stripLeading();
+		String actualvalue = getElement(elementname).getText().strip();
 		Assert.assertEquals(actualvalue, expectedvalue);
 	}
 
 	public void verifyDataContains(String elementname, String expectedkey) {
 		String expectedvalue = propertiesfile.getProperty(expectedkey);
-		String actualvalue = getElement(elementname).getText();
+		String actualvalue = getElement(elementname).getText().strip();
 		boolean result = actualvalue.contains(expectedvalue);
 		Assert.assertEquals(result, true);
 	}
@@ -320,6 +336,22 @@ public class BasePage {
 		driver.switchTo().window(parent);
 		
 		Assert.assertEquals(actualvalue, expectedvalue);
+	}
+
+
+	public void verifyTheEventIsBlocked(String element1, String element2, String key) {
+		
+		String starttime = propertiesfile.getProperty(key);
+		List<WebElement> eventblocklist = getElements(element1);
+		List<WebElement> hourlist = getElements(element2);
+		String subject = null;
+		for(int idx=0; idx<hourlist.size(); idx++) {
+			if(hourlist.get(idx).getText().contains(starttime)) {
+				subject = eventblocklist.get(idx).findElement(By.xpath("//a/span")).getText();
+				break;
+			}
+		}
+		Assert.assertEquals(subject, "Other");
 	}
 
 }

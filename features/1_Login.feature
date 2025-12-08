@@ -34,7 +34,7 @@ And User check the checkbox "rememberme"
 And User click on button "login"
 And User is on "VerifyIdentityPage"
 And User click on button "code"
-And User wait for 20 "seconds"
+And User wait for 20000 milliseconds
 And User click on button "verify"
 And User is on "HomePage"
 Then User verify the text "pagename" "Home"

@@ -1,37 +1,25 @@
 -------------------------------------------------------------------------------
-Test set: Usermenu dropdown all testcases
+Test set: scenarios related to UserProfile and Calender all testcases
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 838.6 s <<< FAILURE! -- in Usermenu dropdown all testcases
-Accounts all testcases.TC14 Create Account Last Activity Report -- Time elapsed: 30.50 s <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'User wait for 3 "seconds"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("User wait for {int} {string}")
-public void user_wait_for(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-Contacts all testcases.TC26 Create New Contact View -- Time elapsed: 40.32 s <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: fcf (tried for 20 second(s) with 500 milliseconds interval)
+Tests run: 42, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 908.0 s <<< FAILURE! -- in scenarios related to UserProfile and Calender all testcases
+Accounts all testcases.TC14 Create Account Last Activity Report -- Time elapsed: 51.45 s <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='Close'] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at training.base.BasePage.waitForElementToLocate(BasePage.java:56)
 	at training.base.BasePage.getElement(BasePage.java:85)
-	at training.base.BasePage.verifyFirstSelectedDropdownItem(BasePage.java:267)
-	at training.steps.Steps.user_verify_first_selected_item_in_dropdown(Steps.java:187)
-	at ✽.User verify first selected item in dropdown "contactsviewdropdown" "contactsviewname"(file:///Users/anshu/Workspace/SalesForceCucumber/features/Contacts.feature:35)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='fcf']"}
+	at training.base.BasePage.HoverOn(BasePage.java:168)
+	at training.steps.Steps.user_hover_on(Steps.java:124)
+	at ✽.User hover on "popupclose"(file:///Users/anshu/Workspace/SalesForceCucumber/features/3_Accounts.feature:103)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Close']"}
   (Session info: chrome=142.0.7444.177)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Air.local', ip: 'fe80:0:0:0:1066:b8a3:680e:55d3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.0.1', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/29/hjrpy44j56b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60472}, goog:processID: 47742, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd581646d65b72191143e44d37172f59
-*** Element info: {Using=name, value=fcf}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/29/hjrpy44j56b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54339}, goog:processID: 58301, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a7f5ef97708d1848ea874a39d2341c
+*** Element info: {Using=xpath, value=//a[text()='Close']}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -42,30 +30,30 @@ Session ID: cd581646d65b72191143e44d37172f59
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 5 more
 
-Contacts all testcases.TC32 Create New Contact With New Account Name -- Time elapsed: 26.55 s <<< ERROR!
+Contacts all testcases.TC32 Create New Contact With New Account Name -- Time elapsed: 28.71 s <<< ERROR!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: con2_ileinner (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at training.base.BasePage.waitForElementToLocate(BasePage.java:56)
-	at training.base.BasePage.verifyText(BasePage.java:195)
-	at training.steps.Steps.user_verify_the_text(Steps.java:146)
-	at ✽.User verify the text "updatedcontactname" "Indian"(file:///Users/anshu/Workspace/SalesForceCucumber/features/Contacts.feature:111)
+	at training.base.BasePage.verifyText(BasePage.java:211)
+	at training.steps.Steps.user_verify_the_text(Steps.java:151)
+	at ✽.User verify the text "updatedcontactname" "Indian"(file:///Users/anshu/Workspace/SalesForceCucumber/features/6_Contacts.feature:111)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#con2_ileinner"}
   (Session info: chrome=142.0.7444.177)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Air.local', ip: 'fe80:0:0:0:1066:b8a3:680e:55d3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '26.0.1', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/29/hjrpy44j56b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61125}, goog:processID: 47894, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 923d5f3216fa1e35b363ed557e8b1884
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.177, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/29/hjrpy44j56b...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56187}, goog:processID: 58698, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68b2c6161f8f2c1334f4c45c2e840d11
 *** Element info: {Using=id, value=con2_ileinner}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -84,16 +72,4 @@ Session ID: 923d5f3216fa1e35b363ed557e8b1884
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 4 more
-
-Login into the Salesforce Application all test cases.TC03 Check RememberMe -- Time elapsed: 11.38 s <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'User wait for 20 "seconds"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@When("User wait for {int} {string}")
-public void user_wait_for(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
 

@@ -11,7 +11,8 @@ public class ShowAllTabsPage extends BasePage {
 		super(driver);
 		
 		addElement("pagetype", By.className("noSecondHeader pageType"));
-		addElement("customizemytabs", By.className("customize"));
+		addElement("customizemytabs", By.name("customize"));
+		
 	}
 	
 }

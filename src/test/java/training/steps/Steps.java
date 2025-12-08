@@ -129,6 +129,11 @@ public class Steps extends BaseTest{
 		page.holdAndMove(elementname, xoffset, yoffset);
 	}
 	
+	@Then("User click the item in new window {string} {string}")
+	public void user_click_the_item_in_new_window(String elementname, String value) {
+		page.clickTheItemInNewWindow(elementname, value);
+	}
+	
 	@Then("User Close new window")
 	public void user_close_new_window() {
 		page.closeNewWindow();
@@ -211,6 +216,11 @@ public class Steps extends BaseTest{
 	@Then("User verify the data is selected {string}")
 	public void user_verify_the_data_is_selected(String elementname) {
 	    page.verifyIsSelected(elementname);
+	}
+	
+	@Then("User verify the event is blocked {string} {string} {string}")
+	public void user_verify_the_event_is_blocked(String element1, String element2, String key) {
+		page.verifyTheEventIsBlocked(element1, element2, key);
 	}
 	
 	@Then ("User verify the list is not empty {string}")

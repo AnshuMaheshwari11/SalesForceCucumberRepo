@@ -34,7 +34,7 @@ And User switch to default content
 Then User verify the data contains "profilename" "lastname"
 
 
-@Developing @UserMenu @UserProfile
+@UserMenu @UserProfile
 Scenario: TC06B Select UserMenu MyProfile and Post
 Given User is on "HomePage"
 When User click on link "usermenu"
@@ -49,7 +49,7 @@ And User click on button "share"
 Then User verify the text contains "feeditemtopic" "Click to add topics:"
 And User verify the data "postedfeed" "postcontent"
 
-@Developing @UserMenu @UserProfile
+@UserMenu @UserProfile
 Scenario: TC06C Select UserMenu MyProfile and Upload File
 Given User is on "HomePage"
 When User click on link "usermenu"
@@ -115,7 +115,7 @@ And User click on dropdown "appmenu"
 And User click on link "Content"
 
 @UserMenu @DeveloperConsole
-Scenario: TC08 Select UserMenu Deleoper Console
+Scenario: TC08 Select UserMenu Developer Console
 Given User is on "HomePage"
 When User click on link "usermenu"
 And User click on link "developerconsole"
