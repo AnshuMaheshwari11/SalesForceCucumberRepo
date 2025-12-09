@@ -39,7 +39,6 @@ public class BasePage {
 	public void waitForPageToLoad() {
         WebDriverWait wait = new WebDriverWait(driver, 30); 
         wait.until((ExpectedCondition<Boolean>) wd ->((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
-
     }
 	
 	public void waitFor(long timeinmillis) {
@@ -71,6 +70,10 @@ public class BasePage {
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
 	}
 	
+	private void waitForElementWithText(WebElement element, String text, int timeinseconds) {
+		WebDriverWait wait = new WebDriverWait(driver, timeinseconds);
+		wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+	}
 	
 	public void switchToFrame(String elementname) {
 		waitForFrameToBeAvailableAndSwitch(objectrepo.get(elementname),10);
@@ -115,8 +118,8 @@ public class BasePage {
 		String relativepath = propertiesfile.getProperty(elementname);
 		File file = new File(relativepath);
 		getElement(elementname).sendKeys(file.getAbsolutePath());
-		
 	}
+	
 	public void readAndSelectFromDropdown(String elementname, String key) {
 		String inputvalue = propertiesfile.getProperty(key);
 		Select dropdown = new Select(getElement(elementname));
@@ -152,8 +155,8 @@ public class BasePage {
 				break;
 			}
 		}
-		
 	}
+	
 	public void clickOn(String elementname) {
 		WebElement element = getElement(elementname);
 		waitForElementToClickable(element,20);
@@ -208,8 +211,9 @@ public class BasePage {
 	//Verification Section
 	
 	public void verifyText(String elementname, String expectedvalue) {
-		waitForElementToLocate(objectrepo.get(elementname), 10);
-		String actualvalue = getElement(elementname).getText().strip();
+		WebElement element = getElement(elementname);
+		waitForElementWithText(element, expectedvalue, 3);
+		String actualvalue = element.getText().strip();
 		Assert.assertEquals(actualvalue, expectedvalue);
 	}
 	

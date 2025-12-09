@@ -24,10 +24,8 @@ And User enter into textbox "lastname" "ABCD"
 And User click on button "saveall"
 And User switch to default content
 When User is on "HomePage"
-And User wait for page to load
 Then User verify the text contains "usermenulabel" "ABCD"
 When User is on "UserProfilePage"
-And User wait for page to load
 Then User verify the text contains "profilename" "ABCD"
 
 @Other
