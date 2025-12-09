@@ -218,20 +218,26 @@ public class BasePage {
 	}
 	
 	public void verifyTextContains(String elementname, String expectedvalue) {
-		String actualvalue = getElement(elementname).getText().strip();
+		WebElement element = getElement(elementname);
+		waitForElementWithText(element, expectedvalue, 3);
+		String actualvalue = element.getText().strip();
 		boolean result = actualvalue.contains(expectedvalue);
 		Assert.assertEquals(result, true);
 	}
 	
 	public void verifyData(String elementname, String expectedkey) {
 		String expectedvalue = propertiesfile.getProperty(expectedkey);
-		String actualvalue = getElement(elementname).getText().strip();
+		WebElement element = getElement(elementname);
+		waitForElementWithText(element, expectedvalue, 3);
+		String actualvalue = element.getText().strip();
 		Assert.assertEquals(actualvalue, expectedvalue);
 	}
 
 	public void verifyDataContains(String elementname, String expectedkey) {
 		String expectedvalue = propertiesfile.getProperty(expectedkey);
-		String actualvalue = getElement(elementname).getText().strip();
+		WebElement element = getElement(elementname);
+		waitForElementWithText(element, expectedvalue, 3);
+		String actualvalue = element.getText().strip();
 		boolean result = actualvalue.contains(expectedvalue);
 		Assert.assertEquals(result, true);
 	}
