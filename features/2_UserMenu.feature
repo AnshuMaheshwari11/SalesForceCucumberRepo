@@ -46,6 +46,7 @@ And User switch to iframe "postframe"
 And User read and enter into textbox "postcontent"
 And User switch to default content
 And User click on button "share"
+And User wait for 3000 milliseconds
 Then User verify the text contains "feeditemtopic" "Click to add topics:"
 And User verify the data "postedfeed" "postcontent"
 
@@ -60,6 +61,7 @@ When User click on link "file"
 And User click on button "uploadfile"
 And User read and upload the file "choosefilepath"
 And User click on button "share"
+And User wait for 3000 milliseconds
 Then User verify the text contains "feeditemtopic" "Click to add topics:"
 And User verify the data "uploadedfile" "filebasename"
 
